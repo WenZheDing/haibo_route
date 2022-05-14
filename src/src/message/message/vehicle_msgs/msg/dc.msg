@@ -1,0 +1,14 @@
+uint8 DC_command
+uint8 DC_entranceRequest
+uint8 DC_parkingRequest
+float32 Excavator_AngleRoll
+float32 Excavator_Anglepitch
+float32 Excavator_AngleHeading
+float32 Excavator_PosLon
+float32 Excavator_PosLat
+uint8 DC_truckFinish
+uint8 MQTT_GateStatus
+uint8 Excavator_ImuStatus
+uint8 DC_VehControlReq
+uint8 DC_DispatchReq
+string road_List

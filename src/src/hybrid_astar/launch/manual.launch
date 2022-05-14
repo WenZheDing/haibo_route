@@ -1,0 +1,20 @@
+<launch>
+    <!-- Turn on hybrid_astar node -->
+    <node name="hybrid_astar" pkg="hybrid_astar" type="hybrid_astar_node" output="screen" respawn= "true"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find hybrid_astar)/maps/map.yaml" />
+    <node name="tf_update" pkg="tf_update" type="tf_update" output="screen"/>
+    <node name="decision" pkg="decision" type="decision_maker" output="screen" />
+    <node name="obstacle_detection" pkg="obstacle_detection" type="obstacle_detection" output="screen" />
+    <node pkg="map_simulation" type="map_simulation" name="map_simulation" output="screen" respawn= "true"/>
+    <node name="tf_broadcaster" pkg="hybrid_astar" type="tf_broadcaster" />
+    <node name="path_target" pkg="path_target" type="path_target" output="screen" respawn="false"/>
+    <node pkg="dwa_planner" type="dwa_planner" name="dwa_planner" clear_params="true" output="screen">
+        <rosparam file="$(find dwa_planner)/config/dwa_planner_param.yaml"/>
+    </node>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hybrid_astar)/config/config.rviz" />
+    <!--node name="global_map" pkg="mapping" type="global_map"/-->
+    <!--node name="mapping_node" pkg="mapping" type="map_node" />
+    <node name="lat2xy" pkg="mapping" type="lat2xy.py"   /-->
+
+    <!--node pkg = "rosbag" type = "play" name = "rosbag" args ="-l -r 2 /home/wushaoteng/project/hailuo/catkin_ws/dataset/hybrid_astar_0813_2020-08-13-17-05-24.bag" /-->
+</launch>

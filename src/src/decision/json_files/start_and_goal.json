@@ -1,0 +1,54 @@
+{
+   "origin_handover_switch" : 0,
+   // "excavtor_lat" : 31.137062,
+   // "excavtor_lon" : 118.179385,
+   // "excavtor_heading" : 340.00,
+
+   // near
+   "excavtor_lat" : 31.138175,
+   "excavtor_lon" : 118.179833,
+   "excavtor_heading" : 300,
+   // far smooth
+   // "excavtor_lat" : 31.137456,
+   // "excavtor_lon" : 118.178187,
+   // "excavtor_heading" : 65.00,
+   "alp_in_move_distance" : 10,
+   "Joint_Point_Max" : 200,
+   "handover_backward_dis" : 35,
+   "fp_nHandover_backward_diff" : 30,
+   "strPathName_up" : "u2_BB95",
+   "strPathName_down" : "d2_BB95",
+  //  "strPathName_up" : "uB_BB95",
+  //  "strPathName_down" : "dB_BB95",
+   "u2_BB95" : "u2_BB95",
+   "uA_BB95" : "uA_BB95",
+   "uB_BB95" : "uB_BB95",
+   "d2_BB95" : "d2_BB95",
+   "dA_BB95" : "dA_BB95",
+   "dB_BB95" : "dB_BB95",
+
+   "json_switch_handle" : 1,
+   "dist_thresh": 50,  
+   "backward_dist_near": 25,  
+   "backward_dist_far": 15,  
+   "vector_weight" : 1,
+   "handover_down_dist" : 20,
+
+   "in_base_distance" : 20,
+   "in_heading_weight" : 1.0,
+   "in_distance_weight" : 1.0,
+   "in_distance_radius" : 10,
+   "out_base_distance" : 50,
+   "out_heading_weight" : 1.0,
+   "out_distance_weight" : 1.0,
+   "out_distance_radius" : 20,
+
+   "only_for_routeplanning" : true,
+
+   "origin_start_x" : 65.8705,
+   "origin_start_y" : 189.813,
+   "origin_start_heading" : 250.18,
+   "origin_alpout_goal_x" : 31.07,
+   "origin_alpout_goal_y" : 181.75,
+   "origin_alpout_goal_yaw" : 70
+}

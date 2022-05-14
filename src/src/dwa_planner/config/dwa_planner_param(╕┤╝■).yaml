@@ -1,0 +1,30 @@
+PI: 3.1415926
+
+MAX_SPEED: 5 # m/s 向前
+MIN_SPEED: -5 # m/s 向后
+MAX_ACC: 0.5 # m/s*s
+MIN_ACC: -0.5 #  m/s*s
+
+MAX_STEER: 40 * PI / 180 # rad 向右
+MIN_STEER: -40 * PI / 180 # rad 向左
+MAX_STEER_SPEED: 20 * PI / 180 # rad/s
+MIN_STEER_SPEED: -20 * PI / 180 # rad/s
+MAX_STEER_ACC: 100 * PI / 180 # rad/s*s
+MIN_STEER_ACC: 100 * PI / 180 # rad/s*s
+
+SPEED_RESOLUTION: 1 # m/s
+STEER_RESOLUTION: 5 * PI / 180 # rad
+
+dt: 0.2 # s
+PREDICT_TIME: 5.0 # s
+
+VEHICLE_H: 5.0 # m 车辆横向长度 5150
+VEHICLE_V_AXIS: 4.570 # m 前后轴轴距 4570
+VEHICLE_V_FRONT: 4.25 # m 后轴距离车辆最前方的距离 2965+4570:7535
+VEHICLE_V_BACK: 4.25 # m 后轴距离车辆最后方的距离 3100
+
+#震荡代价不能超过15%
+mfDirectionWeight: 0.9
+mfOscillationWeight: 0.0
+mfDistanceWeight: 0.5
+mfHeadingWeight: 0.0
